@@ -30,9 +30,9 @@
 
         <h3 style="color: #34495e; margin-top: 20px;">Temporary Data Usage</h3>
         <ul style="list-style-type: none; padding: 0;">
-            <li style="margin-bottom: 10px;"><strong>Location Data:</strong> Only used temporarily for weather information when the weather widget is enabled. Location data is never stored permanently and is only sent to the weather service provider (Open-Meteo) to fetch weather information.</li>
             <li style="margin-bottom: 10px;"><strong>Bookmarks:</strong> Read-only access to Chrome bookmarks for display purposes. No modification or external sharing of bookmark data occurs.</li>
             <li style="margin-bottom: 10px;"><strong>Search:</strong> Uses Chrome's default search provider. No search queries are stored or tracked.</li>
+            <li style="margin-bottom: 10px;"><strong>Voice Search:</strong> Uses the Web Speech API for voice recognition. Audio data is processed locally and not stored.</li>
         </ul>
     </section>
 
@@ -41,19 +41,19 @@
         <p>ManiX interacts with the following third-party services:</p>
         <ol style="margin-left: 20px;">
             <li style="margin-bottom: 15px;">
-                <strong>Open-Meteo API</strong>
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li>Purpose: Weather information</li>
-                    <li>Data shared: Geographic coordinates (latitude/longitude) only when weather widget is used</li>
-                    <li>No personal information is shared</li>
-                </ul>
-            </li>
-            <li style="margin-bottom: 15px;">
                 <strong>Unsplash</strong>
                 <ul style="list-style-type: disc; margin-left: 20px;">
                     <li>Purpose: Wallpaper images</li>
                     <li>Data shared: None</li>
                     <li>Only retrieves public images</li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <strong>Google Services</strong>
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li>Purpose: Quick access to Google apps (Gmail, Drive, etc.)</li>
+                    <li>Data shared: None</li>
+                    <li>Only provides links to official Google services</li>
                 </ul>
             </li>
         </ol>
@@ -64,7 +64,6 @@
         <p>ManiX requires certain Chrome permissions to function:</p>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li><strong>Storage:</strong> To save your preferences locally</li>
-            <li><strong>Geolocation:</strong> Only for weather widget functionality (optional)</li>
             <li><strong>Bookmarks:</strong> To display your Chrome bookmarks</li>
             <li><strong>Search:</strong> To integrate with Chrome's search functionality</li>
         </ul>
@@ -74,7 +73,7 @@
         <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px;">Data Security</h2>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>All data is stored locally using Chrome's secure storage API</li>
-            <li>No data is transmitted to external servers (except temporary location data for weather)</li>
+            <li>No data is transmitted to external servers</li>
             <li>No analytics or tracking mechanisms are implemented</li>
             <li>No personal information is collected or stored</li>
         </ul>
@@ -95,7 +94,7 @@
     </section>
 
     <footer style="margin-top: 40px; text-align: center; color: #7f8c8d; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 20px;">
-        Last updated: February 3, 2025
+        Last updated: February 4, 2025
     </footer>
 </body>
 </html>
